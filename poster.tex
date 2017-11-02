@@ -29,12 +29,11 @@
 % 5. Content of heading
 \newenvironment{colourblock}[5]{%
   \begin{textblock}{#1}(#2,#3)
-  \begin{beamercolorbox}[sep=1cm]{boxtitles}
-  \vspace{-0.75cm}
+  \begin{beamercolorbox}[sep=1cm,ht=4.95cm]{boxtitles}
 
-\fontsize{1.85cm}{2.45cm}\selectfont\textcolor{#4}{\textbf{#5}}
-
-  \vspace{0.75cm}
+\fontsize{54}{2.95cm}\selectfont
+\raisebox{0pt}[2.95cm][0pt]{\textcolor{#4}{\textbf{#5}}}
+\vspace{0.75cm}
       \end{beamercolorbox}
   \begin{tcolorbox}[enhanced,colframe=mrclightblue,colback=white,boxsep=0cm,right=0.1cm,left=0.1cm,top=1cm,bottom=0.5cm,boxrule=0pt,toprule=0pt,bottomrule=2pt,leftrule=-0.5pt,rightrule=-0.5pt,arc=0pt]
       \centering\noindent%
@@ -66,7 +65,7 @@
 % Block 1
 % arguments to colourblock are in the format: 
 % \begin{colourblock}{blockwidth}{top left distance from left}{top left distance from top}{colour of heading text}{heading text}
-\begin{colourblock}{0.315}{0.015}{0.2}{mrcblue}{Block 1}
+\begin{colourblock}{0.315}{0.015}{0.2}{mrcblue}{Blockq 1}
 This 3-column layout is a starting point only. It can be adapted to 4 columns or to be read across, instead of down, the page.
 
 For horizontal layouts, either make text boxes the full width of the poster or ensure they are of equal height (see below).
